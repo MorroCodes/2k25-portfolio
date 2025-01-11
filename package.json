@@ -34,5 +34,6 @@
 		"gsap": "^3.12.5",
 		"lenis": "^1.1.18",
 		"postcss": "^8.4.49"
-	}
+	},
+	"packageManager": "yarn@4.6.0"
 }
