@@ -1,6 +1,4 @@
 <script lang="ts">
-	export const preprender = true;
-	
     import { onMount } from 'svelte';
 	import { page } from '$app/state';
 	import '../app.css';	
