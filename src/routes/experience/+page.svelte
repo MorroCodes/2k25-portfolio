@@ -11,7 +11,7 @@
       year: "2020 - 2024"
     },
     {
-      company: "Desingosource",
+      company: "Designosource",
       contribution: "Front-end developer",
       year: "2019 - 2020"
     },
@@ -32,23 +32,5 @@
         <p class="text-xl">{experience.year}</p>
       </div>
     {/each}
-
   </div>
-
 </div>
-  <!-- Content Sections -->
-  <section id="section1" class="h-screen bg-[#FAF9F6] flex items-center justify-center">
-    <h1 class="text-4xl font-bold">Light Background</h1>
-  </section>
-
-  <section id="section2" class="h-screen bg-black flex items-center justify-center">
-    <h1 class="text-4xl font-bold text-white">Dark Background</h1>
-  </section>
-
-  <section id="section3" class="h-screen bg-gray-700 flex items-center justify-center">
-    <h1 class="text-4xl font-bold text-white">Another Dark Section</h1>
-  </section>
-
-  <section id="section4" class="h-screen bg-[#FAF9F6] flex items-center justify-center">
-    <h1 class="text-4xl font-bold">Back to Light Background</h1>
-  </section>
