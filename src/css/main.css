@@ -1,0 +1,14 @@
+@import 'utility/animation.css';
+
+@import 'components/headings.css';
+@import 'components/menu.css';
+
+:root {
+    background-color: #FAF9F6;
+    color: #292C33;
+}
+
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+}

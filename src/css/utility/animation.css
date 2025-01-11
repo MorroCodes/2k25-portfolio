@@ -1,0 +1,14 @@
+[gsap-cloak] {
+    display: none !important;
+}
+.clip-path-full {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    overflow: hidden;
+}
+
+.gsap-title {
+    opacity: 0;
+}
+.gsap-title-row {
+    display: block;
+}

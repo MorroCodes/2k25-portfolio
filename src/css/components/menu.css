@@ -1,0 +1,33 @@
+.burger {
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    cursor: pointer;
+    transform-origin: top left;
+    .line {
+      position: absolute;
+      height: .2rem;
+      left:0;
+      right: 0;
+      background: white;
+      transition: transform 400ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+      border-radius: 1px;
+      &.top{
+        transform: translateY(-.5rem);
+      }
+      &.bottom {
+        transform: translateY(.5rem);
+      }
+    }
+    &.active .line {
+      &.top{
+        transform: rotate(-45deg);
+      }
+      &.middle {
+        transform: scaleX(0);
+      }
+      &.bottom {
+        transform: rotate(45deg);
+      }
+    }
+  }
