@@ -1,6 +1,6 @@
 import Lenis from "lenis";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger, Flip } from "gsap/all";
 
 export let scrollState = $state({
     lenis: null,
@@ -15,6 +15,7 @@ export function initializeScroll() {
     scrollState.gsap = gsap;
 
     scrollState.gsap.registerPlugin(ScrollTrigger);
+    scrollState.gsap.registerPlugin(Flip);
 
     scrollState.lenis = new Lenis({
         smooth: true

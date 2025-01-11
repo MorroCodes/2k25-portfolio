@@ -21,7 +21,7 @@
     </div>
 
     <div class="w-full relative after:absolute after:opacity-50 after:inset-0 after:bg-gradient-to-t after:from-violet-500 after:to-transparent after:transition  group-hover:after:opacity-0">
-        <ParallaxImage {imageSrc}/>
+        <ParallaxImage {imageSrc} imageWidth="1903" imageHeight="1080"/>
     </div>
     <a href="{url}" class="inline-block text-xl border-b border-black sm:text-3xl after:absolute after:z-10 after:inset-0">
         Discover 

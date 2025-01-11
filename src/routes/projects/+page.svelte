@@ -8,25 +8,25 @@
   const projects = [
     {
       title: "CCV",
-      url: "Full-stack development",
+      url: "/projects/ccv",
       year: "2024",
       imageSrc: ccvCover
     },
     {
       title: "Nagelmackers",
-      url: "Full-stack development",
+      url: "/projects/nagelmackers",
       year: "2023",
       imageSrc: nagelmackersCover
     },
     {
       title: "OneWomanCollective",
-      url: "Front-end development",
+      url: "/projects/onewomancollective",
       year: "2020",
       imageSrc: owcCover
     },
     {
       title: "Squash-point",
-      url: "Front-end development",
+      url: "/projects/squash-point",
       year: "2023",
       imageSrc: squashPointCover
     },

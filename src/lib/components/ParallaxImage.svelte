@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
     import { scrollState, initializeScroll } from "$lib/states/scrollState.svelte";
 
-    let { imageSrc } = $props();
+    let { imageSrc, imageWidth='auto', imageHeight='auto' } = $props();
     let imageContainer;
 
     onMount(() => {
@@ -53,6 +53,13 @@
 
 <div bind:this={imageContainer} class="gsap-image w-full h-full overflow-hidden grayscale hover:grayscale-0 group-hover:grayscale-0 transition duration-500 opacity-0" >
     <div class="scale-125 hover:scale-100 group-hover:scale-100 transition duration-500 origin-top">
-        <img src="{imageSrc}" alt="Mauro Esposito" class="w-full group-hover:transition-transform group-hover:!translate-y-0"/>
+        <img 
+        src="{imageSrc}" 
+        alt="Mauro Esposito" 
+        class="gsap-flip-image w-full group-hover:transition-transform group-hover:!translate-y-0"
+        data-flip-id="{imageSrc}"
+        width="{imageWidth}"
+        height="{imageHeight}"
+        />
     </div>
 </div>
