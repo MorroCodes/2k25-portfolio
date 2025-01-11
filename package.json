@@ -24,6 +24,7 @@
 		"wrangler": "^3.101.0"
 	},
 	"dependencies": {
+		"@aws-sdk/client-sts": "^3.726.1",
 		"@sveltejs/adapter-cloudflare": "^5.0.0",
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@tailwindcss/typography": "^0.5.15",
