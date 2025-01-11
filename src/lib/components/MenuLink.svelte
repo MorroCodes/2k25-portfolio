@@ -21,6 +21,7 @@
 </script>
 
 <a href="{url}" 
+class="menuLink"
 aria-current={page.url.pathname === '{url}'}  
 bind:this={link}
 on:mouseenter={() => { animation.play() }}

@@ -7,7 +7,7 @@
 	import { Flip } from "gsap/all";
     import { afterNavigate, beforeNavigate } from '$app/navigation';
     import MenuLink from '$lib/components/MenuLink.svelte';
-	import { contactIcon, experienceIcon, homeIcon, projectIcon } from '$lib/icons';
+	import { contactIcon, drupalIcon, experienceIcon, githubIcon, homeIcon, linkedinIcon, projectIcon } from '$lib/icons';
 
 	let { children } = $props();
 
@@ -75,7 +75,7 @@
 				duration: .7,
 				ease: 'power2.inOut'
 			});
-			scrollState.gsap.fromTo('#mainNavigation a', 
+			scrollState.gsap.fromTo('#mainNavigation a.menuLink', 
 				{
 					opacity: 0,
 					x: '-12rem',
@@ -89,10 +89,22 @@
 					delay: .4
 				}
 			);
+			scrollState.gsap.fromTo('#mainNavigation .gsap-social-container a', 
+				{
+					y: '12rem',
+				},
+				{
+					y: 0,
+					duration: .7,
+					stagger: .2,
+					delay: 1,
+					ease: 'power2.out'
+				}
+		);
 
 		} else {
 			scrollState.lenis.start();
-			scrollState.gsap.to('#mainNavigation a', {
+			scrollState.gsap.to('#mainNavigation a.menuLink', {
 				opacity: 0,
 				x: '12rem',
 				ease: 'power3.in',
@@ -117,6 +129,19 @@
 		<MenuLink text="Experience" page={page} icon={experienceIcon} url="/experience" />
 		<MenuLink text="Contact" page={page} icon={contactIcon} url="/contact" />
 	</nav>
+	<div class="gsap-social-container absolute bottom-12 left-0 right-0 text-white">
+		<div class="container flex gap-12 justify-end">
+			<a class="inline-block" href="https://www.linkedin.com/in/mauro-esposito-dev/">
+				{@html linkedinIcon}
+			</a>
+			<a class="inline-block" href="https://github.com/MorroCodes" target="_blank" rel="nofollow">
+				{@html githubIcon}
+			</a>
+			<a class="inline-block" href="https://www.drupal.org/u/mauro_" target="_blank" rel="nofollow">
+				{@html drupalIcon}
+			</a>
+		</div>
+	</div>
 </div>
 <header class="sticky top-0 h-16 md:h-32 z-20 flex items-center bg-transparent mix-blend-difference">
 	<nav class="container flex justify-between items-center gap-2 sm:text-xl transition duration-300 mix-blend-difference	text-white">

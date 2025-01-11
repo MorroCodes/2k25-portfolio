@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   const experiences = [
     {
       company: "Acerta",
@@ -6,7 +6,7 @@
       year: "2024 - current"
     },
     {
-      company: "iO digital",
+      company: "iO Digital",
       contribution: "Full-stack Drupal developer",
       year: "2020 - 2024"
     },
@@ -19,6 +19,16 @@
 </script>
 
 <div class="container">
+  <h1 class="text-3xl sm:text-7xl md:text-8xl lg:text-9xl gsap-title">
+    <span class="block clip-path-full">
+      <span class="gsap-title-row">
+        Experience
+      </span>
+    </span> 
+  </h1>
+  <p class="prose">
+    In 2020, I graduated cum laude with a bachelor's degree in Interactive Multimedia design. Since then I've had the privilege of working at several companies, each opportunity allowing me to improve my skills. I have experience working with Drupal, Laravel, SvelteKit, Alpine.js and more.
+  </p>
   <div class="grid grid-cols-3">
     <div class="grid grid-cols-subgrid col-span-full py-10">
       <h6>Company</h6>
