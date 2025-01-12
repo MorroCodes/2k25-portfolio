@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 
-.gsap-title {
+.gsap-title, .gsap-fade-in {
     opacity: 0;
 }
 .gsap-title-row {

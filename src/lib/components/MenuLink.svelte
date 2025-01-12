@@ -24,8 +24,8 @@
 class="menuLink"
 aria-current={page.url.pathname === '{url}'}  
 bind:this={link}
-on:mouseenter={() => { animation.play() }}
-on:mouseleave={() => { animation.reverse() }}
+onmouseenter={() => { animation.play() }}
+onmouseleave={() => { animation.reverse() }}
 >
     <div class="flex items-center group-hover:opacity-60 hover:!opacity-100 transition duration-300">
         <span class="icon w-0 overflow-hidden" bind:this={iconContainer}>

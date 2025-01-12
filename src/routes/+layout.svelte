@@ -42,6 +42,25 @@
 		});
 	}
 
+	function setFadeInAnimations() {
+		let tl = scrollState?.gsap?.timeline({
+			scrollTrigger: {
+                    trigger: '.gsap-fade-in',
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    toggleActions: "restart reverse restart reverse",
+                }
+		});
+
+		tl.fromTo('.gsap-fade-in', {
+			opacity: 0,
+		}, {
+			opacity: 1,
+			delay: .4,
+			duration: 1
+		}) 
+	}
+
 	function toggleMenu() {
 		menuOpen = !menuOpen;
 	}
@@ -53,6 +72,7 @@
 
 	afterNavigate((navigation) => { 
 		setTitleAnimations();
+		setFadeInAnimations();
 		if (!navigation.from) {
 			return;
 		}
@@ -151,11 +171,11 @@
 <header class="fixed top-0 left-0 right-0 h-16 md:h-32 z-20 flex items-center bg-transparent mix-blend-difference">
 	<nav class="container flex justify-between items-center gap-2 sm:text-xl transition duration-300 mix-blend-difference	text-white">
 		<a href="/" class="visibility-none">mauroesposito.be</a>
-		<div class="flex">
-			<button on:click="{toggleMenu}" class="pr-2 md:pr-4">
+		<div class="flex" role="navigation">
+			<button onclick="{toggleMenu}" class="pr-2 md:pr-4">
 				Menu
 			</button>
-			<div on:click="{toggleMenu}" class="flex items-center burger {menuOpen ? 'active': ''}" >
+			<div onclick="{toggleMenu}" class="flex items-center burger {menuOpen ? 'active': ''}" >
 				<div class="line top"></div>
 				<div class="line middle"></div>
 				<div class="line bottom"></div>
