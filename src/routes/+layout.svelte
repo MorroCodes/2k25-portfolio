@@ -46,8 +46,6 @@
 		let tl = scrollState?.gsap?.timeline({
 			scrollTrigger: {
                     trigger: '.gsap-fade-in',
-                    start: 'top bottom',
-                    end: 'bottom top',
                     toggleActions: "restart reverse restart reverse",
                 }
 		});
@@ -56,7 +54,7 @@
 			opacity: 0,
 		}, {
 			opacity: 1,
-			delay: .4,
+			delay: 1,
 			duration: 1
 		}) 
 	}
@@ -73,12 +71,17 @@
 	afterNavigate((navigation) => { 
 		setTitleAnimations();
 		setFadeInAnimations();
+
 		if (!navigation.from) {
 			return;
 		}
 		if (!flipState) {
             return;
         }
+		if (navigation?.to?.route.id === '/projects') {
+			return;
+		}
+
 		Flip.from(flipState, {
 			targets: '.gsap-flip-image',
 			duration: .5,

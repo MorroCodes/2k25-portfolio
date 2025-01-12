@@ -67,7 +67,7 @@
                     <span class="gsap-title-row">{ageInSeconds}</span>
                 </span>
             </p>
-            <p class="prose-xl max-w-96">The number of seconds I've been on this planet. I started making websites when I was 14. They were bad.</p>
+            <p class="gsap-fade-in prose-xl max-w-96">The number of seconds I've been on this planet. I started making websites when I was 14. They were bad.</p>
         </div>
         <div class="order-3 sm:order-4 max-w-96 max-h-60 w-full h-full">
             <ParallaxImage imageSrc={paintbrushesImg}/>
@@ -78,7 +78,7 @@
                     <span class="gsap-title-row">Creative?</span>
                 </span>
             </p>
-            <p class="prose-xl max-w-96">I've always enjoyed creating things. Sadly, I'm no good with my hands. That's why I mostly stick to my computer.</p>
+            <p class="gsap-fade-in prose-xl max-w-96">I've always enjoyed creating things. Sadly, I'm no good with my hands. That's why I mostly stick to my computer.</p>
         </div>
 
         <div class="order-5 max-w-96 max-h-60 w-full h-full">
@@ -91,7 +91,7 @@
                     <span class="gsap-title-row">Form </span>
                 </span>
             </p>
-            <p class="prose-xl max-w-96">I'm the first to acknowledge a good aesthetic. Yet, I like it when the things I create are more than just good looking eye candy. Design should follow the function of a product. Aesthetic should never get in the way of functionality.</p>
+            <p class="gsap-fade-in prose-xl max-w-96">I'm the first to acknowledge a good aesthetic. Yet, I like it when the things I create are more than just good looking eye candy. Design should follow the function of a product. Aesthetic should never get in the way of functionality.</p>
         </div>
     </section>
 

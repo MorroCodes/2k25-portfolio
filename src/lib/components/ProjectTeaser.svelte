@@ -22,7 +22,9 @@
 
     <div class="w-full relative mb-2">
         <ParallaxImage {imageSrc} imageWidth="1903" imageHeight="1080"/>
-        <div class="gsap-fade-in absolute opacity-50 inset-0 bg-gradient-to-t from-violet-500 to-transparent transition  group-hover:opacity-0"></div>
+        <div class="gsap-fade-in absolute opacity-50 inset-0">
+            <div class="w-full h-full opacity-50 bg-gradient-to-t from-violet-500 to-transparent transition group-hover:opacity-0"></div>
+        </div>
     </div>
     <a href="{url}" class="gsap-fade-in after:transform-none inline-block text-xl border-b border-black sm:text-3xl after:absolute after:z-10 after:inset-0">
         Discover 
