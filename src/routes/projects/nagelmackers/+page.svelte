@@ -1,5 +1,5 @@
 <script>
-	import ProjectDetail from './../../../lib/components/ProjectDetail.svelte';
+	import ProjectDetail from '$lib/components/ProjectDetail.svelte';
     import imageSrc from '$lib/images/projects/nagelmackers-cover.webp';
 </script>
 <ProjectDetail 

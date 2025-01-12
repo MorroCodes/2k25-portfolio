@@ -13,6 +13,7 @@
 
 	let menuOpen = $state(false);
 	let flipState: Flip.FlipState;
+	let pageTitle: string = 'Mauro Esposito - Creative Webdeveloper';
 
 
 	onMount(()=> {
@@ -122,6 +123,10 @@
 	});
 
 </script>
+<svelte:head>
+    <title>{pageTitle}</title>
+	<meta name="description" content="Mauro Esposito is a creative webdeveloper with experience in both Front- & Back-end applications" />
+</svelte:head>
 <div class="fixed bg-black top-0 left-0 right-0 bottom-full z-20 overflow-hidden" id="mainNavigation">
 	<nav class="container text-white flex flex-col text-4xl sm:text-8xl pt-16 md:pt-32 gap-4 group">
 		<MenuLink text="Home" page={page} icon={homeIcon} url="/" />

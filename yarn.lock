@@ -170,7 +170,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/client-sso-oidc@npm:3.726.0, @aws-sdk/client-sso-oidc@npm:^3.726.0":
+"@aws-sdk/client-sso-oidc@npm:3.726.0":
   version: 3.726.0
   resolution: "@aws-sdk/client-sso-oidc@npm:3.726.0"
   dependencies:
@@ -265,7 +265,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/client-sts@npm:3.726.1, @aws-sdk/client-sts@npm:^3.726.1":
+"@aws-sdk/client-sts@npm:3.726.1":
   version: 3.726.1
   resolution: "@aws-sdk/client-sts@npm:3.726.1"
   dependencies:
@@ -385,7 +385,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/credential-provider-node@npm:3.726.0, @aws-sdk/credential-provider-node@npm:^3.726.0":
+"@aws-sdk/credential-provider-node@npm:3.726.0":
   version: 3.726.0
   resolution: "@aws-sdk/credential-provider-node@npm:3.726.0"
   dependencies:
@@ -435,7 +435,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/credential-provider-web-identity@npm:3.723.0, @aws-sdk/credential-provider-web-identity@npm:^3.723.0":
+"@aws-sdk/credential-provider-web-identity@npm:3.723.0":
   version: 3.723.0
   resolution: "@aws-sdk/credential-provider-web-identity@npm:3.723.0"
   dependencies:
@@ -2385,15 +2385,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/adapter-static@npm:^3.0.8":
-  version: 3.0.8
-  resolution: "@sveltejs/adapter-static@npm:3.0.8"
-  peerDependencies:
-    "@sveltejs/kit": ^2.0.0
-  checksum: 10c0/0ae958463d074c49b733059f53b685ee26e0debe9207aad5d77ea1b651a1efc743647f9c0cf78d72ae0243e23ece4b620b0600f17ec83e732791a265fea6df4f
-  languageName: node
-  linkType: hard
-
 "@sveltejs/enhanced-img@npm:^0.4.4":
   version: 0.4.4
   resolution: "@sveltejs/enhanced-img@npm:0.4.4"
@@ -4175,13 +4166,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "portfolio-2k25-sveltekit@workspace:."
   dependencies:
-    "@aws-sdk/client-sso-oidc": "npm:^3.726.0"
-    "@aws-sdk/client-sts": "npm:^3.726.1"
-    "@aws-sdk/credential-provider-node": "npm:^3.726.0"
-    "@aws-sdk/credential-provider-web-identity": "npm:^3.723.0"
     "@sveltejs/adapter-auto": "npm:^3.0.0"
     "@sveltejs/adapter-cloudflare": "npm:^5.0.0"
-    "@sveltejs/adapter-static": "npm:^3.0.8"
     "@sveltejs/enhanced-img": "npm:^0.4.4"
     "@sveltejs/kit": "npm:^2.0.0"
     "@sveltejs/vite-plugin-svelte": "npm:^4.0.0"

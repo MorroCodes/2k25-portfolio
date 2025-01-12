@@ -1,5 +1,5 @@
 <script>
-	import ProjectDetail from './../../../lib/components/ProjectDetail.svelte';
+	import ProjectDetail from '$lib/components/ProjectDetail.svelte';
     import imageSrc from '$lib/images/projects/ccv-cover.webp';
 </script>
 <ProjectDetail 

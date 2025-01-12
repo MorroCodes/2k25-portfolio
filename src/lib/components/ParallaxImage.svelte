@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
     import { onMount } from "svelte";
     import { scrollState, initializeScroll } from "$lib/states/scrollState.svelte";
 
-    let { imageSrc, imageWidth='auto', imageHeight='auto' } = $props();
-    let imageContainer;
+    let { imageSrc, imageWidth='auto', imageHeight='auto', imageAlt='' } = $props();
+    let imageContainer: Element;
 
     onMount(() => {
         initializeScroll();
@@ -12,9 +12,16 @@
     });
 
     function animateIn() {
+        scrollState.gsap.set(imageContainer, { clipPath: "polygon(0 0, 100% 0%, 0 0, 0 0)", opacity: 1});
+
         let tl = scrollState.gsap.timeline(
             { 
-                paused: true
+                scrollTrigger: {
+                    trigger: imageContainer,
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    toggleActions: "restart reverse restart reverse",
+                }
              }
         );
         tl.to(imageContainer, {
@@ -29,7 +36,6 @@
             ease: "power3.inOut"
         });
         
-        scrollState.gsap.set(imageContainer, { clipPath: "polygon(0 0, 100% 0%, 0 0, 0 0)", opacity: 1});
         tl.play();
 
     }
@@ -55,7 +61,7 @@
     <div class="scale-125 hover:scale-100 group-hover:scale-100 transition duration-500 origin-top">
         <img 
         src="{imageSrc}" 
-        alt="Mauro Esposito" 
+        alt="{imageAlt}" 
         class="gsap-flip-image w-full group-hover:transition-transform group-hover:!translate-y-0"
         data-flip-id="{imageSrc}"
         width="{imageWidth}"
