@@ -136,19 +136,19 @@
 	</nav>
 	<div class="gsap-social-container absolute bottom-12 left-0 right-0 text-white">
 		<div class="container flex gap-12 justify-end">
-			<a class="inline-block" href="https://www.linkedin.com/in/mauro-esposito-dev/">
+			<a class="inline-block" aria-label="LinkedIn profile" href="https://www.linkedin.com/in/mauro-esposito-dev/">
 				{@html linkedinIcon}
 			</a>
-			<a class="inline-block" href="https://github.com/MorroCodes" target="_blank" rel="nofollow">
+			<a class="inline-block" aria-label="GitHub profile" href="https://github.com/MorroCodes" target="_blank" rel="nofollow">
 				{@html githubIcon}
 			</a>
-			<a class="inline-block" href="https://www.drupal.org/u/mauro_" target="_blank" rel="nofollow">
+			<a class="inline-block" aria-label="Drupal.org profile" href="https://www.drupal.org/u/mauro_" target="_blank" rel="nofollow">
 				{@html drupalIcon}
 			</a>
 		</div>
 	</div>
 </div>
-<header class="sticky top-0 h-16 md:h-32 z-20 flex items-center bg-transparent mix-blend-difference">
+<header class="fixed top-0 left-0 right-0 h-16 md:h-32 z-20 flex items-center bg-transparent mix-blend-difference">
 	<nav class="container flex justify-between items-center gap-2 sm:text-xl transition duration-300 mix-blend-difference	text-white">
 		<a href="/" class="visibility-none">mauroesposito.be</a>
 		<div class="flex">
@@ -163,6 +163,7 @@
 		</div>
 	</nav>
 </header>
+<div class="h-16 md:h-32"></div>
 
 {@render children()}
 
