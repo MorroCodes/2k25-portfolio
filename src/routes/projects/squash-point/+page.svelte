@@ -9,6 +9,6 @@
     year="2023"
     technologies="Drupal, Bootstrap"
     role="Solo Full-stack developer"
-    url="https://www.nagelmackers.be/"
+    url="https://squash-point.be/"
     description="A court reservation portal for members of Squash-Point "
 />
