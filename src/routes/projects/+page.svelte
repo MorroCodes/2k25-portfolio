@@ -41,7 +41,7 @@
       </span>
     </span> 
   </h1>
-  <section class="py-4 grid sm:grid-cols-2 gap-8">
+  <section class="py-4 grid md:grid-cols-2 gap-8">
   {#each projects as project }
     <ProjectTeaser 
       imageSrc={project.imageSrc} 

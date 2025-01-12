@@ -52,7 +52,7 @@
 </div>
 
 <section class="container mt-16">
-    <h2 class="text-8xl font-display gsap-title">
+    <h2 class="text-4xl sm:text-8xl font-display gsap-title">
         <span class="block clip-path-full">
             <span class="gsap-title-row">Get to know me</span>
         </span>

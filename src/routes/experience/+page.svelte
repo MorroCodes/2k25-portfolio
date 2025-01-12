@@ -29,17 +29,17 @@
   <p class="prose">
     In 2020, I graduated cum laude with a bachelor's degree in Interactive Multimedia design. Since then I've had the privilege of working at several companies, each opportunity allowing me to improve my skills. I have experience working with Drupal, Laravel, SvelteKit, Alpine.js and more.
   </p>
-  <div class="grid grid-cols-3">
+  <div class="grid grid-cols-3 gap-2">
     <div class="grid grid-cols-subgrid col-span-full py-10">
       <h6>Company</h6>
       <h6>Role</h6>
       <h6>Year</h6>
     </div>
     {#each experiences as experience }
-      <div class="grid grid-cols-subgrid col-span-full py-10 border-t border-black">
-        <p class="text-5xl">{experience.company}</p>
-        <p class="text-xl">{experience.contribution}</p>
-        <p class="text-xl">{experience.year}</p>
+      <div class="grid grid-cols-subgrid col-span-full items-center py-10 border-t border-black">
+        <p class="sm:text-2xl lg:text-4xl">{experience.company}</p>
+        <p class="text-sm sm:text-xl">{experience.contribution}</p>
+        <p class="text-sm sm:text-xl">{experience.year}</p>
       </div>
     {/each}
   </div>

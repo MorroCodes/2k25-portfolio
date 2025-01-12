@@ -4,7 +4,7 @@
 </script>
 <article class="relative group mt-2">
     <div class="flex justify-between flex-wrap items-center">    
-        <h2 class="gsap-title text-2xl  sm:text-5xl !normal-case">
+        <h2 class="gsap-title text-2xl sm:text-5xl md:text-2xl lg:text-4xl xl:text-5xl !normal-case">
             <span class="block clip-path-full">
                 <span class="gsap-title-row mb-2">
                     {title}
