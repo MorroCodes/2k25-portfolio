@@ -153,46 +153,49 @@
     <title>{pageTitle}</title>
 	<meta name="description" content="Mauro Esposito is a creative webdeveloper with experience in both Front- & Back-end applications" />
 </svelte:head>
-<div class="fixed bg-black top-0 left-0 right-0 bottom-full z-20 overflow-hidden" id="mainNavigation">
-	<nav class="container text-white flex flex-col text-4xl sm:text-8xl pt-16 md:pt-32 gap-4 group">
-		<MenuLink text="Home" page={page} icon={homeIcon} url="/" />
-		<MenuLink text="Projects" page={page} icon={projectIcon} url="/projects" />
-		<MenuLink text="Experience" page={page} icon={experienceIcon} url="/experience" />
-		<MenuLink text="Contact" page={page} icon={contactIcon} url="/contact" />
-	</nav>
-	<div class="gsap-social-container absolute bottom-12 left-0 right-0 text-white">
-		<div class="container flex gap-12 justify-end">
-			<a class="inline-block" aria-label="LinkedIn profile" href="https://www.linkedin.com/in/mauro-esposito-dev/">
-				{@html linkedinIcon}
-			</a>
-			<a class="inline-block" aria-label="GitHub profile" href="https://github.com/MorroCodes" target="_blank" rel="nofollow">
-				{@html githubIcon}
-			</a>
-			<a class="inline-block" aria-label="Drupal.org profile" href="https://www.drupal.org/u/mauro_" target="_blank" rel="nofollow">
-				{@html drupalIcon}
-			</a>
-		</div>
-	</div>
-</div>
-<header class="fixed top-0 left-0 right-0 h-16 md:h-32 z-20 flex items-center bg-transparent mix-blend-difference">
-	<nav class="container flex justify-between items-center gap-2 sm:text-xl transition duration-300 mix-blend-difference	text-white">
-		<a href="/" class="visibility-none">mauroesposito.be</a>
-		<div class="flex" role="navigation">
-			<button onclick="{toggleMenu}" class="pr-2 md:pr-4">
-				Menu
-			</button>
-			<div onclick="{toggleMenu}" class="flex items-center burger {menuOpen ? 'active': ''}" >
-				<div class="line top"></div>
-				<div class="line middle"></div>
-				<div class="line bottom"></div>
+<div class="flex flex-col justify-between min-h-screen">
+	<div>
+		<div class="fixed bg-black top-0 left-0 right-0 bottom-full z-20 overflow-hidden" id="mainNavigation">
+			<nav class="container text-white flex flex-col text-4xl sm:text-8xl pt-16 md:pt-32 gap-4 group">
+				<MenuLink text="Home" page={page} icon={homeIcon} url="/" />
+				<MenuLink text="Projects" page={page} icon={projectIcon} url="/projects" />
+				<MenuLink text="Experience" page={page} icon={experienceIcon} url="/experience" />
+				<MenuLink text="Contact" page={page} icon={contactIcon} url="/contact" />
+			</nav>
+			<div class="gsap-social-container absolute bottom-12 left-0 right-0 text-white">
+				<div class="container flex gap-12 justify-end">
+					<a class="inline-block" aria-label="LinkedIn profile" href="https://www.linkedin.com/in/mauro-esposito-dev/" target="_blank" rel="nofollow">
+						{@html linkedinIcon}
+					</a>
+					<a class="inline-block" aria-label="GitHub profile" href="https://github.com/MorroCodes" target="_blank" rel="nofollow">
+						{@html githubIcon}
+					</a>
+					<a class="inline-block" aria-label="Drupal.org profile" href="https://www.drupal.org/u/mauro_" target="_blank" rel="nofollow">
+						{@html drupalIcon}
+					</a>
+				</div>
 			</div>
 		</div>
-	</nav>
-</header>
-<div class="h-16 md:h-32"></div>
+		<header class="fixed top-0 left-0 right-0 h-16 md:h-32 z-20 flex items-center bg-transparent mix-blend-difference">
+			<nav class="container flex justify-between items-center gap-2 sm:text-xl transition duration-300 mix-blend-difference	text-white">
+				<a href="/" class="visibility-none">mauroesposito.be</a>
+				<div class="flex" role="navigation">
+					<button onclick="{toggleMenu}" class="pr-2 md:pr-4">
+						Menu
+					</button>
+					<div onclick="{toggleMenu}" class="flex items-center burger {menuOpen ? 'active': ''}" >
+						<div class="line top"></div>
+						<div class="line middle"></div>
+						<div class="line bottom"></div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="h-16 md:h-32"></div>
 
-{@render children()}
-
-<footer class="mt-8 py-8 container">
-	<p>&#169;{new Date().getFullYear()} - Mauro Esposito</p>
-</footer>
+		{@render children()}
+	</div>
+	<footer class="mt-8 py-8 container self-end">
+		<p>&#169;{new Date().getFullYear()} - Mauro Esposito</p>
+	</footer>
+</div>
