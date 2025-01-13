@@ -43,20 +43,23 @@
 	}
 
 	function setFadeInAnimations() {
-		let tl = scrollState?.gsap?.timeline({
+		let animatedElements = document.querySelectorAll('.gsap-fade-in');
+		animatedElements.forEach((fadeInElement) => {
+
+			let tl = scrollState?.gsap?.timeline({
 			scrollTrigger: {
-                    trigger: '.gsap-fade-in',
+                    trigger: fadeInElement,
                     toggleActions: "restart reverse restart reverse",
                 }
-		});
-
-		tl.fromTo('.gsap-fade-in', {
-			opacity: 0,
-		}, {
-			opacity: 1,
-			delay: 1,
-			duration: 1
-		}) 
+			});	
+			tl.fromTo(fadeInElement, {
+				opacity: 0,
+			}, {
+				opacity: 1,
+				delay: 1,
+				duration: 1
+			}) ;
+		})
 	}
 
 	function toggleMenu() {
