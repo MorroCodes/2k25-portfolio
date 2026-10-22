@@ -1,9 +1,14 @@
 <script lang="ts">
   const experiences = [
     {
+      company: "VITO",
+      contribution: "Full-stack Drupal developer",
+      year: "2025 - current"
+    },
+    {
       company: "Acerta",
       contribution: "Full-stack Drupal developer",
-      year: "2024 - current"
+      year: "2024 - 2025"
     },
     {
       company: "iO Digital",
